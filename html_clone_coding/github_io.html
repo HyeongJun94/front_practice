@@ -56,6 +56,7 @@
       </ul>
       <ul id="user-site" class ='tutorial-list'>
         <li id="create-repo-step" class="image-right">
+          <!-- TODO size 바꿔도 비율 유지 -->
           <div class="numberCircle">1</div>
           <h4>Create a repository</h4>
           <p>Head over to
@@ -68,27 +69,123 @@
             If the firset part of the repository doesn't exactly match your username, it won't work, so make sure to get it right.
           </p>
         </li>
-        <li id="a-terminal">
+        <li>
           <div class="numberCircle">?</div>
+          <h4>What git client are you using?</h4>
+          <ul class="tabs">
+            <li id="a-terminal-btn" onClick="choiceList(1)">A terminal
+            <li id="github-desktop-btn" onClick="choiceList(2)">GitHub Desktop
+            <li id="i-dont-know-btn" onClick="choiceList(3)">I don't know</li>
+          </ul>
         </li>
-        <li id="a-terminal">
+        <li class="a-terminal">
+          <div class="numberCircle">2</div>
+          <h4>Clone the repository</h4>
+          <p>Go to the folder where you want to store your proejct, and clone the new repository:</p>
+          <div class="terminal">
+            <div class="header"></div>
+            <div class="shell">
+              <p>
+                <span class="path">~</span>
+                <span class="prompt">$</span>
+                git clone https://github.com/<em>username</em>/<em>username</em>.github.io
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="a-terminal">
+          <div class="numberCircle">3</div>
+          <h4>Hello World</h4>
+          <p>Enter the project folder and add an index.html file:</p>
+          <div class="terminal">
+            <div class="header"></div>
+            <div class="shell">
+              <p>
+                <span class="path">~</span>
+                <span class="prompt">$</span>
+                cd <em>username</em>.github.io
+              </p>
+              <p>
+                <span class="path">~</span>
+                <span class="prompt">$</span>
+                echo "Hello World" > index.html
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="a-terminal">
+          <div class="numberCircle">4</div>
+          <h4>Push it</h4>
+          <p>Add, commit, and push your changes:</p>
+          <div class="terminal">
+            <div class="header"></div>
+            <div class="shell">
+              <p>
+                <span class="path">~</span>
+                <span class="prompt">$</span>
+                git add --all
+              </p>
+              <p>
+                <span class="path">~</span>
+                <span class="prompt">$</span>
+                git commit -m "Initial commit"
+              </p>
+              <p>
+                <span class="path">~</span>
+                <span class="prompt">$</span>
+                git push -u origin master
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="a-terminal">
+          <div class="numberCircle">5</div>
+          <h4>..and you're done!</h4>
+          <p>Fire up a brower and go to <b>https://<em>username</em>.github.io</b></p>
+          <div class="myCircle">
+            &#10003;
+          </div>
+        </li>
+        <li class="github-desktop">
           <div class="numberCircle">2</div>
         </li>
-        <li id="a-terminal">
+        <li class="github-desktop">
           <div class="numberCircle">3</div>
         </li>
-        <li id="a-terminal">
+        <li class="github-desktop">
+          <div class="numberCircle">4</div>
+        </li>
+        <li class="github-desktop">
+          <div class="numberCircle">5</div>
+        </li>
+        <li class="i-dont-know">
+          <div class="numberCircle">2</div>
+        </li>
+        <li class="i-dont-know">
+          <div class="numberCircle">3</div>
+        </li>
+        <li class="i-dont-know">
           <div class="numberCircle">4</div>
         </li>
       </ul>
       <ul id="project-site">
-        <li>A</li>
+        <li>
+          <div class="numberCircle">?</div>
+        </li>
         <li>B</li>
         <li>C</li>
       </ul>
     </section>
-    <section>
-      <h1>section4</h1>
+    <section class="fourth-section">
+      <h1>Now that you're up and running, here are a frew things you should know.</h1>
+      <ul class="next-steps wrapper">
+        <li class="jekyll">
+          <a class="hero-octicon" href="https://help.github.com/articles/using-jekyll-with-pages"></a>
+          <h4>hello</h4>
+        </li>
+        <li class="custom-urls">2</li>
+        <li class="guides">3</li>
+      </ul>
     </section>
     <footer>
       <h1>footer</h1>
