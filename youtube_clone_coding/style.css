@@ -1,0 +1,173 @@
+
+body, h2, h3{
+  margin: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h3{
+  font-size:15px;
+  color: gray;
+  font-weight: 200;
+}
+
+.navbar{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 8px;
+}
+
+
+.navbar_logo{
+  padding: 8px 8px;
+}
+
+.navbar_logo *{
+  color:white;
+  display: inline;
+}
+
+.navbar_logo i{
+  color:red;
+}
+
+
+.navbar_icons * {
+  padding: 4px 4px;
+  color: white;
+  display: inline;
+}
+
+.video {
+  width:100vw;
+  height: 50vh;
+}
+
+.content{
+  display: flex;
+  padding:12px 16px;
+  flex-direction: column;
+}
+
+.content h2{
+  font-size:20px;
+  font-weight: 300;
+  display: inline;
+}
+
+.content__description__tag ul{
+  margin-bottom: 8px;
+  padding-left: 0;
+  color: blue;
+}
+
+.content__description__tag li{
+  padding: 8px;
+  display: inline;
+}
+
+.content__description__tag li:first-child{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.content__description__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__description__title > i{
+  margin-left: 10px;
+}
+.content__description__date{
+  margin-top: 8px;
+}
+
+.content__description__button_group ul{
+  padding-left:0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content__description__button_group ul > li{
+  text-align: center;
+}
+
+.content__description__button_group ul > li > i{
+  padding: 4px;
+}
+
+.content__description__button_group i{
+  display: block;
+  color: grey;
+}
+
+.content__description__subscribe{
+  display: flex;
+  align-items: center;
+  padding: 8px 0px; 
+  border: 0.5px solid gray;
+  border-left: none;
+  border-right: none;
+}
+
+.content__description__subscribe > img{
+  width: 2em;
+}
+
+.content__description__subscribe__info{
+  margin-left: 16px;
+
+}
+
+.content__description__subscribe > button{
+  margin-left: auto;
+  border: none;
+  background-color: white;
+}
+
+.content__video_list{
+  padding-left: 0px;
+}
+
+.content__video_list_item{
+  margin-top:8px;
+}
+
+.content__video_list_item img{
+  width: 2em;
+}
+
+.content__video_list_item > a{
+  display: flex;
+  align-items: center;
+}
+
+.content__video_list_item h3{
+  margin-top: 0px;
+}
+
+.content__video_list .content__description__title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (min-width:800px){
+  .content{
+    display: flex;
+    padding:12px 16px;
+    flex-direction: row;
+    padding: 10px;
+  }
+}
